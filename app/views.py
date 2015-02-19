@@ -18,6 +18,12 @@ from flask import render_template, request, redirect, url_for
 def home():
     """Render website's home page."""
     return render_template('home.html')
+    
+    
+@app.route('profile.html')
+def profile():
+    """Render website's home page."""
+    return render_template('profile.html', name="Profile")
 
 
 @app.route('/about/')
@@ -55,4 +61,4 @@ def page_not_found(error):
 
 
 if __name__ == '__main__':
-    app.run(debug=True,host="0.0.0.0",port="8888")
+    app.run(debug=True,host="0.0.0.0",port="8080")
