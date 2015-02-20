@@ -20,7 +20,7 @@ def home():
     return render_template('home.html')
     
     
-@app.route('/profile.html')
+@app.route('/profile')
 def profile():
     """Render website's home page."""
     return render_template('profile.html')
